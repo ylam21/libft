@@ -3,25 +3,35 @@ Goal of this project is to reimplement set of functions from the libc.
 This project is part of my studies at 42Prague.
 ## Compilation and usage:
     1. Clone the repository:
+
     ```sh
     git clone git@github.com:ylam21/libft.git libft
     ```
+
     2. Redirect:
+
     ```sh
     cd libft
     ```
+
     3. Complile with:
+
     ```sh
     make all
     ```
+
     4. Include header folder in your source file:
+
     ```c
     #include "libft.h"
     ```
+
     5. Link the compiled library:
+
     ```sh
     gcc -I<path_to_libft> your_program.c -L<path_to_libft> -lft -o a.out
     ```
+
 ## Functions checklist
 ### Libc functions:
 - [X] isalpha
