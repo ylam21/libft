@@ -1,4 +1,6 @@
-# libft - My C library remake
+# libft
+Goal of this project is to reimplement set of functions from the libc.
+This project is part of my studies at 42Prague.
 ## Functions checklist
 ### Libc functions:
 - [X] isalpha
