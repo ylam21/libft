@@ -5,8 +5,8 @@ This project is part of my studies at 42Prague.
 ### Libc functions:
 - [X] isalpha
 - [X] isdigit
-- [ ] isalnum
-- [ ] isascii
+- [X] isalnum
+- [X] isascii
 - [ ] isprint
 - [ ] strlen
 - [ ] memset

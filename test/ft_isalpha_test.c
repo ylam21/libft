@@ -5,7 +5,7 @@ int ft_isalpha(int c);
 
 int main(void) {
 	// isalpha [ctype library]:
-	// The values returned are nonzero if the character c falls into the tested class, and zero if not.
+	// the values returned are nonzero if the character c falls into the tested class, and zero if not
 	int test0 = 'a';
 	assert(ft_isalpha(test0) != 0 && isalpha(test0) != 0);
 

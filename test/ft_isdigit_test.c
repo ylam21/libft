@@ -5,7 +5,7 @@ int ft_isdigit(int c);
 
 int main(void) {
 	// isdigit [ctype library]:
-	// The values returned are nonzero if the character c falls into the tested class, and zero if not.
+	// the values returned are nonzero if the character c falls into the tested class, and zero if not
 	int test0 = '0';
 	assert(ft_isdigit(test0) != 0 && isdigit(test0) != 0);
 
