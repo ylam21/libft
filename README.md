@@ -6,11 +6,11 @@ This project is part of my studies at 42Prague.
 ```sh
 git clone git@github.com:ylam21/libft.git libft
 ```
-2. Redirect:
+2. Redirect to the repository:
 ```sh
 cd libft
 ```
- 3. Complile with:
+ 3. Compile with:
  ```sh
 make all
 ```
