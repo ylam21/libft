@@ -12,14 +12,14 @@ int main(void) {
 	int test1 = 127;
 	assert(ft_isascii(test1) != 0 && isascii(test1) != 0);
 
-	int test3 = -1;
+	int test2 = -1;
+	assert(ft_isascii(test2) == 0 && isascii(test2) == 0);
+
+	int test3 = 128;
 	assert(ft_isascii(test3) == 0 && isascii(test3) == 0);
 
-	int test4 = 128;
-	assert(ft_isascii(test4) == 0 && isascii(test4) == 0);
-
-	int test5 = 42;
-	assert(ft_isascii(test5) != 0 && isascii(test5) != 0);
+	int test4 = 42;
+	assert(ft_isascii(test4) != 0 && isascii(test4) != 0);
 
 	return 0;
 }

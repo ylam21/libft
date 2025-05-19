@@ -7,7 +7,7 @@ This project is part of my studies at 42Prague.
 - [X] isdigit
 - [X] isalnum
 - [X] isascii
-- [ ] isprint
+- [X] isprint
 - [ ] strlen
 - [ ] memset
 - [ ] bzero
