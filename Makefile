@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRC_DIR = srcs
-TEST_DIR  = tests
+SRC_DIR = src
+TEST_DIR  = test
 BUILD_DIR = build
 
 # Automatically find test source files and coresponding source files

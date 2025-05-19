@@ -1,8 +1,8 @@
 #ifndef LIBFT_H
+
 #define LIBFT_H
-
 #include <string.h>
-void bzero(void *s, size_t n);
-void *ft_memset(void *s, int c, size_t n);
-
+	//libc functions
+	int ft_isalpha(int c);
+	int ft_isdigit(int c);
 #endif

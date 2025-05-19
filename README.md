@@ -1,8 +1,8 @@
-#libft - My C library remake
-##Functions checklist
-Libc functions:
-- [ ] isalpha
-- [ ] isdigit
+# libft - My C library remake
+## Functions checklist
+### Libc functions:
+- [X] isalpha
+- [X] isdigit
 - [ ] isalnum
 - [ ] isascii
 - [ ] isprint
@@ -24,7 +24,7 @@ Libc functions:
 - [ ] atoi
 - [ ] calloc
 - [ ] strdup
-Additional functions:
+### Additional functions:
 - [ ] ft_substr
 - [ ] ft_strjoin
 - [ ] ft_strtrim
@@ -36,7 +36,7 @@ Additional functions:
 - [ ] ft_putstr_fd
 - [ ] ft_putendl_fd
 - [ ] ft_putnbr_fd
-Bonus part:
+### Bonus part:
 - [ ] ft_lstnew
 - [ ] ft_lstadd_front
 - [ ] ft_lstsize
