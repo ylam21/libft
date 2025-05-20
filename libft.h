@@ -9,4 +9,5 @@
 	int ft_isascii(int c);
 	int ft_isprint(int c);
 	int ft_strlen(size_t);
+	void *ft_memset(void *s, int c, size_t n);
 #endif
