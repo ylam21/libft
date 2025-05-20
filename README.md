@@ -31,7 +31,7 @@ gcc -I<path_to_libft> your_program.c -L<path_to_libft> -lft -o a.out
 - [X] isprint
 - [X] strlen
 - [X] memset
-- [ ] bzero
+- [X] bzero
 - [ ] memcpy
 - [ ] memmove
 - [ ] strlcpy
