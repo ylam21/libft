@@ -7,24 +7,24 @@ BONUS_DIR = ./
 OBJ_DIR = objs
 
 SRC = ft_isalpha \
-	ft_isdigit \
-	ft_isalnum \
-	ft_isascii \
-	ft_isprint \
-	ft_strlen \
 	ft_memset \
 	ft_bzero \
 	ft_memcpy \
 	ft_memmove \
+	ft_memchr \
+	ft_memcmp \
+	ft_strlen \
+	ft_isdigit \
+	ft_isalnum \
+	ft_isascii \
+	ft_isprint \
 	ft_strlcpy \
 	ft_strlcat \
 	ft_toupper \
 	ft_tolower \
 	ft_strchr \
-#	ft_strrchr \
+	ft_strrchr \
 	ft_strncmp \
-	ft_memchr \
-	ft_memcmp \
 	ft_strnstr \
 	ft_atoi \
 	ft_calloc \
@@ -41,7 +41,7 @@ SRC = ft_isalpha \
 	ft_putendl_fd \
 	ft_putnbr_fd
 
-##BONUS_SRC = ft_lstnew \
+BONUS_SRC = ft_lstnew \
 	ft_lstadd_front \
 	ft_lstsize \
 	ft_lstlast \

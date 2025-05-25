@@ -1,22 +1,22 @@
 #include <string.h>
 
 void *ft_memmove(void *dest, const void *src, size_t n) {
-	unsigned char *_dest = (unsigned char *)dest;
-	unsigned char tmp[255];
-	unsigned char *_tmp = tmp;
-	unsigned char idx;
+	const unsigned char *_src;
+	unsigned char *_dest;
 
-	idx = 0;
-	while (src && n--) {
-		tmp[idx++] = *(unsigned char *)src++;
+	if ((src < dest) && (src + n >= dest)) {
+		_src = src + n - 1;
+		_dest = dest + n - 1;
+		while (n--) {
+			*_dest-- = *_src--;
+		}
 	}
-
-	tmp[idx] = 0;
-
-	idx = 0;
-	while (*_tmp != 0) {
-		*(unsigned char *)dest++ = _tmp[idx++];
+	else {
+		_src = src;
+		_dest = dest;
+		while (n--) {
+			*_dest++ = *_src++;
+		}
 	}
-
-	return _dest;
+	return dest;
 }
