@@ -6,19 +6,11 @@ This project is part of my studies at 42Prague.
 ```sh
 git clone git@github.com:ylam21/libft.git libft
 ```
-2. Redirect to the repository:
-```sh
-cd libft
-```
- 3. Compile with:
- ```sh
-make all
-```
-4. Include header folder in your source file:
+2. Include header folder in your source file:
 ```c
  #include "libft.h"
 ```
- 5. Link the compiled library:
+3. Link the compiled library:
 ```sh
 gcc -I<path_to_libft> your_program.c -L<path_to_libft> -lft -o a.out
 ```
