@@ -1,5 +1,6 @@
-build/
+objs/
 .vscode
 *.o
 *.a
+libft_tester
 

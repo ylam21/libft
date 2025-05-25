@@ -4,11 +4,11 @@
 #include <string.h>
 
 void *ft_memset(void *s, int c, size_t n) {
-	unsigned char *p = (unsigned char *)s;
-	unsigned char val = (unsigned char )c;
+	unsigned char *_s = (unsigned char *)s;
+	unsigned char _c = (unsigned char )c;
 	while (n--) {
-		*p++ = val;
+		*_s++ = _c;
 	}
-	return s;
+	return _s;
 }
 
