@@ -20,4 +20,5 @@
 	int ft_tolower(int c);
 	int ft_memcmp(const void *s1, const void *s2, size_t n);
 	char *ft_strchr(const char *s, int c);
+	char *ft_strrchr(const char *s, int c);
 	#endif
