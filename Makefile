@@ -27,13 +27,13 @@ SRC = ft_isalpha \
 	ft_strncmp \
 	ft_strnstr \
 	ft_atoi \
+	ft_itoa \
 #ft_calloc \
 	ft_strdup \
+	ft_split \
 	ft_substr \
 	ft_strjoin \
 	ft_strtrim \
-	ft_split \
-	ft_itoa \
 	ft_strmapi \
 	ft_striteri \
 	ft_putchar_fd \

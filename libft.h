@@ -24,4 +24,5 @@
 	int ft_strncmp(const char *s1, const char *s2, size_t n);
 	char *ft_strnstr(const char *haystack, const char *needle, size_t n);
 	int ft_atoi(const char *s);
+	char *ft_itoa (int num);
 	#endif
