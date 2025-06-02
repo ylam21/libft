@@ -31,8 +31,8 @@ SRC = ft_isalpha \
 	ft_calloc \
 	ft_strdup \
 	ft_split \
-#ft_substr \
-	ft_strjoin \
+	ft_substr \
+#ft_strjoin \
 	ft_strtrim \
 	ft_strmapi \
 	ft_striteri \
