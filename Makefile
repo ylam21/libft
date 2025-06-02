@@ -28,8 +28,8 @@ SRC = ft_isalpha \
 	ft_strnstr \
 	ft_atoi \
 	ft_itoa \
-#ft_calloc \
-	ft_strdup \
+	ft_calloc \
+#ft_strdup \
 	ft_split \
 	ft_substr \
 	ft_strjoin \

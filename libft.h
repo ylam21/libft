@@ -25,4 +25,5 @@
 	char *ft_strnstr(const char *haystack, const char *needle, size_t n);
 	int ft_atoi(const char *s);
 	char *ft_itoa (int num);
+	void *ft_calloc(size_t num, size_t size);
 	#endif
