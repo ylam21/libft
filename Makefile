@@ -29,9 +29,9 @@ SRC = ft_isalpha \
 	ft_atoi \
 	ft_itoa \
 	ft_calloc \
-#ft_strdup \
+	ft_strdup \
 	ft_split \
-	ft_substr \
+#ft_substr \
 	ft_strjoin \
 	ft_strtrim \
 	ft_strmapi \

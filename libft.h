@@ -2,7 +2,6 @@
 
 #define LIBFT_H
 #include <string.h>
-	// libc functions:
 	int ft_isalpha(int c);
 	int ft_isdigit(int c);
 	int ft_isalnum(int c);
@@ -26,4 +25,6 @@
 	int ft_atoi(const char *s);
 	char *ft_itoa (int num);
 	void *ft_calloc(size_t num, size_t size);
-	#endif
+	char *ft_strdup(const char *s);
+	char **ft_split(char const *s, char c);
+#endif
