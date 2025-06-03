@@ -32,7 +32,7 @@ SRC = ft_isalpha \
 	ft_strdup \
 	ft_split \
 	ft_substr \
-#ft_strjoin \
+	ft_strjoin \
 	ft_strtrim \
 	ft_strmapi \
 	ft_striteri \

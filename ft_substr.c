@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdlib.h>
+
 size_t ft_strlen(const char *s);
 
 char *ft_substr(char const *s, unsigned int start, size_t len) {
@@ -16,6 +17,10 @@ char *ft_substr(char const *s, unsigned int start, size_t len) {
 			return NULL;
 		substr[0] = '\0';
 		return substr;
+	}
+
+	else if (s_len - start < len) {
+		len = s_len - start;
 	}
 
 	substr = (char *)malloc(sizeof(char) * (len + 1));

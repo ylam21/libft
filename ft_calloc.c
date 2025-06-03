@@ -1,24 +1,17 @@
-#include <stdlib.h>
+#include "libft.h"
 
 void *ft_calloc(size_t num, size_t size) {
 	size_t total = num * size;
 
-	if (size == 0 || num == 0)
-		return malloc(1);
-
-	if (total / num != size)
+	if (num > 0 && size > SIZE_MAX / num)
 		return NULL;
 
-	int *ptr = (int *)malloc(total);
+	void *ptr = malloc(total);
 
 	if (!ptr)
 		return NULL;
 
-	int *_ptr = ptr;
+	ft_bzero(ptr,total);
 
-	while (total--) {
-		*ptr++ = 0;
-	}
-
-	return _ptr;
+	return ptr;
 }
