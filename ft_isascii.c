@@ -1,6 +1,18 @@
-//	checks whether c is a 7-bit unsigned char value that fits into the ASCII character set
-int ft_isascii(int c) {
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/03 15:28:59 by omaly             #+#    #+#             */
+/*   Updated: 2025/06/03 15:29:03 by omaly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_isascii(int c)
+{
 	if (c < 0 || 127 < c)
-		return 0;
-	return 1;
+		return (0);
+	return (1);
 }

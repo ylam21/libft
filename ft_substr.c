@@ -1,41 +1,39 @@
-#include <string.h>
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/03 15:37:41 by omaly             #+#    #+#             */
+/*   Updated: 2025/06/03 15:47:10 by omaly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-size_t ft_strlen(const char *s);
+#include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len) {
-	char *substr;
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*substr;
+	size_t	s_len;
+	size_t	i;
 
 	if (!s)
-		return NULL;
-
-	size_t s_len = ft_strlen(s);
-
-	if (s_len <= start) {
-		substr = (char *)malloc(sizeof(char) * 1);
-		if (!substr)
-			return NULL;
-		substr[0] = '\0';
-		return substr;
-	}
-
-	else if (s_len - start < len) {
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		len = 0;
+	else if (len > s_len - start)
 		len = s_len - start;
-	}
-
-	substr = (char *)malloc(sizeof(char) * (len + 1));
-
+	substr = malloc(len + 1);
 	if (!substr)
-		return NULL;
-
-	int i = 0;
-	while (s && s[start + i] != '\0' && len) {
+		return (NULL);
+	i = 0;
+	while (i < len && s[start + i])
+	{
 		substr[i] = s[start + i];
 		i++;
-		len--;
 	}
-
 	substr[i] = '\0';
-
-	return substr;
+	return (substr);
 }

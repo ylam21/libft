@@ -1,14 +1,27 @@
-//	The  memset()  function  fills  the  first  n  bytes of the memory area
-//	pointed to by s with the constant byte c
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/03 15:32:44 by omaly             #+#    #+#             */
+/*   Updated: 2025/06/03 15:33:13 by omaly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-void *ft_memset(void *s, int c, size_t n) {
-	unsigned char *_s = (unsigned char *)s;
-	unsigned char _c = (unsigned char )c;
-	while (n--) {
+void	*ft_memset(void *s, int c, size_t n)
+{
+	unsigned char	*_s;
+	unsigned char	_c;
+
+	_s = (unsigned char *)s;
+	_c = (unsigned char)c;
+	while (n--)
+	{
 		*_s++ = _c;
 	}
-	return _s;
+	return (_s);
 }
-

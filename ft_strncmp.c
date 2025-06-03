@@ -1,13 +1,25 @@
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/03 15:36:54 by omaly             #+#    #+#             */
+/*   Updated: 2025/06/03 15:37:04 by omaly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_strncmp(const char *s1, const char *s2, size_t n) {
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
 	if (n == 0)
-		return 0;
-
-	while (s1 && (*s1 == *s2) && --n) {
+		return (0);
+	while (s1 && (*s1 == *s2) && --n)
+	{
 		s1++;
 		s2++;
 	}
-
 	return (*s1 - *s2);
 }

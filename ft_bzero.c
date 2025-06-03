@@ -1,16 +1,24 @@
-//	the  bzero()  function  erases  the  data  in the n bytes of the memory
-//	starting at the location pointed to by s, by writing zeros (bytes  con‐
-//	taining '\0') to that area.
-//	The  explicit_bzero()  function  performs the same task as bzero().  It
-//	differs from bzero() in that it guarantees that compiler  optimizations
-//	will  not  remove  the erase operation if the compiler deduces that the
-//	operation is "unnecessary".
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/03 15:27:56 by omaly             #+#    #+#             */
+/*   Updated: 2025/06/03 15:28:06 by omaly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <strings.h>
+#include "libft.h"
 
-void ft_bzero(void *s, size_t n) {
-	unsigned char *_s = (unsigned char *)s;
-	while (_s && n--) {
+void	ft_bzero(void *s, size_t n)
+{
+	unsigned char	*_s;
+
+	_s = (unsigned char *)s;
+	while (_s && n--)
+	{
 		*_s++ = 0;
 	}
 }

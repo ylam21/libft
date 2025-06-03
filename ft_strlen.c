@@ -1,9 +1,25 @@
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/03 15:36:34 by omaly             #+#    #+#             */
+/*   Updated: 2025/06/03 15:36:39 by omaly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-size_t ft_strlen(const char *s) {
-	size_t size = 0;
-	while (*s++) {
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	size;
+
+	size = 0;
+	while (*s++)
+	{
 		size++;
 	}
-	return size;
+	return (size);
 }

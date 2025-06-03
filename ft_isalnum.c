@@ -1,8 +1,20 @@
-//	checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c))
-int ft_isalnum(int c) {
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/06/03 15:28:26 by omaly             #+#    #+#             */
+/*   Updated: 2025/06/03 15:28:31 by omaly            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_isalnum(int c)
+{
 	if (('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))
-		return 1;
+		return (1);
 	else if ('0' <= c && c <= '9')
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }
