@@ -6,7 +6,7 @@
 /*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:36:16 by omaly             #+#    #+#             */
-/*   Updated: 2025/06/03 15:36:28 by omaly            ###   ########.fr       */
+/*   Updated: 2025/06/04 20:51:55 by omaly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		}
 		*dst = 0;
 	}
-	len = 0;
-	while (*_src++)
-	{
-		len++;
-	}
+	len = ft_strlen(_src);
 	return (len);
 }

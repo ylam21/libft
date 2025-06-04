@@ -6,7 +6,7 @@
 /*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:35:24 by omaly             #+#    #+#             */
-/*   Updated: 2025/06/03 15:35:31 by omaly            ###   ########.fr       */
+/*   Updated: 2025/06/04 20:50:50 by omaly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strdup(const char *s)
 
 	len = ft_strlen(s);
 	dup = (char *)malloc(sizeof(char) * (len + 1));
+	if (!dup)
+		return (NULL);
 	i = 0;
 	while (s && s[i] != '\0')
 	{
