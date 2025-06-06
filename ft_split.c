@@ -6,11 +6,24 @@
 /*   By: omaly <omaly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:34:37 by omaly             #+#    #+#             */
-/*   Updated: 2025/06/03 16:04:49 by omaly            ###   ########.fr       */
+/*   Updated: 2025/06/06 13:26:16 by omaly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	ft_freearr(char **s, size_t size)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < size)
+	{
+		free(s[i]);
+		i++;
+	}
+	return ;
+}
 
 static char	*ft_getword(char const *s, char c, int *start)
 {
@@ -78,7 +91,7 @@ char	**ft_split(char const *s, char c)
 		str_arr[i] = ft_getword(s, c, &start);
 		if (!str_arr[i])
 		{
-			free(str_arr[i]);
+			ft_freearr(str_arr, i);
 			return (NULL);
 		}
 		i++;
