@@ -1,7 +1,0 @@
-objs/
-.vscode
-*.o
-*.a
-libft_tester
-
-libft-war-machine/
